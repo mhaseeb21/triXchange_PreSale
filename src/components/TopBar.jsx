@@ -9,11 +9,12 @@ const TopBar = () => {
           Official Channels
         </p>
 
-        <div className="flex items-center space-x-4">
-          <a href="#" className="hover:text-[#bd0404] transition">Twitter</a>
-          <a href="#" className="hover:text-[#bd0404] transition">Telegram</a>
+        <div className="flex items-center space-x-4"> 
+          <a href="https://x.com/tri_xchange?s=21" className="hover:text-[#bd0404] transition">Twitter</a>
+          <a href="https://www.facebook.com/share/16nJsKsLmj/?mibextid=wwXIfr" className="hover:text-[#bd0404] transition">Facebook</a>
+          <a href="https://t.me/trixchangecommunity" className="hover:text-[#bd0404] transition">Telegram</a>
           <a href="#" className="hover:text-[#bd0404] transition">Discord</a>
-          <a href="#" className="hover:text-[#bd0404] transition">Medium</a>
+          <a href="https://www.instagram.com/trixchange?igsh=aGRibjQzN2pxaTZh" className="hover:text-[#bd0404] transition">Instagram</a>
         </div>
 
       </div>
