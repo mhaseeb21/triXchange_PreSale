@@ -124,12 +124,20 @@ const FAQ = () => {
             Can't find the answer you're looking for? Our team is here to help.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-3 bg-[#bd0404] text-white rounded-lg font-semibold hover:bg-[#9a0303] transition-all shadow-lg shadow-[#bd0404]/30">
-              Contact Support
-            </button>
-            <button className="px-8 py-3 border-2 border-gray-300 dark:border-gray-700 text-black dark:text-white rounded-lg font-semibold hover:bg-gray-100 dark:hover:bg-gray-800 transition-all">
-              Join Community
-            </button>
+          <a
+  href="mailto:info@trixchange.com"
+  className="inline-block px-8 py-3 bg-[#bd0404] text-white rounded-lg font-semibold hover:bg-[#9a0303] transition-all shadow-lg shadow-[#bd0404]/30"
+>
+  Contact Support
+</a>
+       <a
+  href="https://t.me/trixchangecommunity"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block px-8 py-3 border-2 border-gray-300 dark:border-gray-700 text-black dark:text-white rounded-lg font-semibold hover:bg-gray-100 dark:hover:bg-gray-800 transition-all"
+>
+  Join Community
+</a>
           </div>
         </div>
 
@@ -149,7 +157,7 @@ const FAQ = () => {
           </a>
 
           <a
-            href="#"
+            href="https://t.me/trixchangecommunity"
             className="flex items-center gap-3 p-4 bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 hover:border-[#bd0404]/50 transition-all group"
           >
             <div className="w-10 h-10 rounded-lg bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
@@ -162,7 +170,7 @@ const FAQ = () => {
           </a>
 
           <a
-            href="#"
+            href="mailto:info@trixchange.com"
             className="flex items-center gap-3 p-4 bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 hover:border-[#bd0404]/50 transition-all group"
           >
             <div className="w-10 h-10 rounded-lg bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">

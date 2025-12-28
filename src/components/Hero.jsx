@@ -70,12 +70,14 @@ const Hero = () => {
             </p>
 
             <div className="mt-10 flex gap-4">
-              <button className="px-8 py-4 bg-[#bd0404] text-white rounded-lg font-semibold hover:bg-[#9a0303] transition-all shadow-lg shadow-[#bd0404]/30 hover:shadow-[#bd0404]/50 hover:scale-105">
-                Read Whitepaper
-              </button>
-              <button className="px-8 py-4 border-2 border-gray-700 rounded-lg text-white font-semibold hover:bg-white/5 hover:border-gray-600 transition-all">
-                Explore Platform
-              </button>
+           <a
+  href="https://trixchange.s3.ap-southeast-1.amazonaws.com/TriXchange_WhitePaper.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block px-8 py-4 bg-[#bd0404] text-white rounded-lg font-semibold hover:bg-[#9a0303] transition-all shadow-lg shadow-[#bd0404]/30 hover:shadow-[#bd0404]/50 hover:scale-105"
+>
+  Read Whitepaper
+</a>
             </div>
           </div>
 

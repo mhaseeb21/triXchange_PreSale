@@ -121,9 +121,7 @@ const PresaleDetails = () => {
               </div>
 
               {/* CTA Button */}
-              <button className="relative w-full py-3 bg-[#bd0404] text-white rounded-lg font-semibold hover:bg-[#9a0303] transition-all shadow-lg group-hover:shadow-[#bd0404]/50">
-                Join {phase.phase}
-              </button>
+      
 
               {/* Bottom accent */}
               <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#bd0404] to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-b-2xl"></div>

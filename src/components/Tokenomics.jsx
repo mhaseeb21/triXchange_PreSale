@@ -45,25 +45,25 @@ const Tokenomics = () => {
   ]
 
   return (
-    <section id="tokenomics" className="py-28 bg-white dark:bg-black relative overflow-hidden">
+    <section id="tokenomics" className="py-16 sm:py-20 md:py-28 bg-white dark:bg-black relative overflow-hidden">
       
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-40 right-20 w-[500px] h-[500px] bg-[#bd0404] rounded-full blur-[150px]"></div>
-        <div className="absolute bottom-40 left-20 w-[500px] h-[500px] bg-purple-600 rounded-full blur-[150px]"></div>
+        <div className="absolute top-40 right-10 sm:right-20 w-[300px] sm:w-[400px] md:w-[500px] h-[300px] sm:h-[400px] md:h-[500px] bg-[#bd0404] rounded-full blur-[100px] sm:blur-[150px]"></div>
+        <div className="absolute bottom-40 left-10 sm:left-20 w-[300px] sm:w-[400px] md:w-[500px] h-[300px] sm:h-[400px] md:h-[500px] bg-purple-600 rounded-full blur-[100px] sm:blur-[150px]"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
 
         {/* HEADER */}
-        <div className="text-center mb-16">
-          <div className="inline-block px-4 py-2 bg-[#bd0404]/10 border border-[#bd0404]/30 rounded-full mb-4">
-            <span className="text-[#bd0404] text-sm font-semibold">📊 Token Distribution</span>
+        <div className="text-center mb-12 sm:mb-16">
+          <div className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 bg-[#bd0404]/10 border border-[#bd0404]/30 rounded-full mb-3 sm:mb-4">
+            <span className="text-[#bd0404] text-xs sm:text-sm font-semibold">📊 Token Distribution</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-black dark:text-white">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black dark:text-white px-4">
             TRIX <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#bd0404] to-red-600">Tokenomics</span>
           </h2>
-          <p className="mt-6 max-w-3xl mx-auto text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
+          <p className="mt-4 sm:mt-6 max-w-3xl mx-auto text-base sm:text-lg text-gray-600 dark:text-gray-400 leading-relaxed px-4">
             TriXchange follows a transparent and balanced tokenomics model designed
             to support sustainable growth, liquidity, and long-term ecosystem
             development.
@@ -71,41 +71,45 @@ const Tokenomics = () => {
         </div>
 
         {/* TOTAL SUPPLY CARD */}
-        <div className="mb-16 max-w-2xl mx-auto">
-          <div className="bg-gradient-to-br from-[#bd0404] to-red-600 rounded-2xl p-8 text-center shadow-2xl shadow-[#bd0404]/20">
-            <p className="text-white/80 text-sm font-semibold uppercase tracking-wider mb-2">Total Supply</p>
-            <p className="text-5xl md:text-6xl font-bold text-white mb-2">300,000,000</p>
-            <p className="text-white/90 text-lg font-semibold">TRIX Tokens</p>
+        <div className="mb-12 sm:mb-16 max-w-2xl mx-auto px-4">
+          <div className="bg-gradient-to-br from-[#bd0404] to-red-600 rounded-2xl p-6 sm:p-8 text-center shadow-2xl shadow-[#bd0404]/20">
+            <p className="text-white/80 text-xs sm:text-sm font-semibold uppercase tracking-wider mb-2">Total Supply</p>
+            <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-2 break-all">
+              300,000,000
+            </p>
+            <p className="text-white/90 text-base sm:text-lg font-semibold">TRIX Tokens</p>
           </div>
         </div>
 
         {/* ALLOCATION GRID */}
-        <div className="mb-20">
-          <h3 className="text-2xl font-bold text-black dark:text-white mb-8 text-center">Token Allocation Breakdown</h3>
+        <div className="mb-16 sm:mb-20">
+          <h3 className="text-xl sm:text-2xl font-bold text-black dark:text-white mb-6 sm:mb-8 text-center px-4">
+            Token Allocation Breakdown
+          </h3>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {allocations.map((item, index) => (
               <div
                 key={index}
-                className="group bg-white dark:bg-gray-900 rounded-xl p-6 border border-gray-200 dark:border-gray-800 hover:border-[#bd0404]/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+                className="group bg-white dark:bg-gray-900 rounded-xl p-5 sm:p-6 border border-gray-200 dark:border-gray-800 hover:border-[#bd0404]/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
               >
                 {/* Color indicator */}
                 <div className={`w-12 h-2 ${item.color} rounded-full mb-4`}></div>
                 
                 {/* Category */}
-                <h4 className="text-lg font-bold text-black dark:text-white mb-3">
+                <h4 className="text-base sm:text-lg font-bold text-black dark:text-white mb-3">
                   {item.category}
                 </h4>
                 
                 {/* Stats */}
                 <div className="space-y-2">
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-600 dark:text-gray-400 text-sm">Allocation:</span>
-                    <span className="text-[#bd0404] font-bold text-xl">{item.allocation}</span>
+                    <span className="text-gray-600 dark:text-gray-400 text-xs sm:text-sm">Allocation:</span>
+                    <span className="text-[#bd0404] font-bold text-lg sm:text-xl">{item.allocation}</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-600 dark:text-gray-400 text-sm">Tokens:</span>
-                    <span className="text-black dark:text-white font-semibold">{item.tokens}</span>
+                    <span className="text-gray-600 dark:text-gray-400 text-xs sm:text-sm">Tokens:</span>
+                    <span className="text-black dark:text-white font-semibold text-sm sm:text-base">{item.tokens}</span>
                   </div>
                 </div>
 
@@ -121,17 +125,17 @@ const Tokenomics = () => {
           </div>
 
           {/* Total Summary */}
-          <div className="mt-8 bg-gray-50 dark:bg-gray-900 rounded-xl p-6 border-2 border-[#bd0404]/30">
-            <div className="flex justify-between items-center max-w-4xl mx-auto">
-              <span className="text-xl font-bold text-black dark:text-white">Total</span>
-              <div className="flex gap-12">
-                <div className="text-right">
-                  <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">Allocation</p>
-                  <p className="text-2xl font-bold text-[#bd0404]">100%</p>
+          <div className="mt-6 sm:mt-8 bg-gray-50 dark:bg-gray-900 rounded-xl p-4 sm:p-6 border-2 border-[#bd0404]/30">
+            <div className="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0 max-w-4xl mx-auto">
+              <span className="text-lg sm:text-xl font-bold text-black dark:text-white">Total</span>
+              <div className="flex gap-8 sm:gap-12">
+                <div className="text-center sm:text-right">
+                  <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 mb-1">Allocation</p>
+                  <p className="text-xl sm:text-2xl font-bold text-[#bd0404]">100%</p>
                 </div>
-                <div className="text-right">
-                  <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">Total Tokens</p>
-                  <p className="text-2xl font-bold text-black dark:text-white">300,000,000</p>
+                <div className="text-center sm:text-right">
+                  <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 mb-1">Total Tokens</p>
+                  <p className="text-xl sm:text-2xl font-bold text-black dark:text-white">300,000,000</p>
                 </div>
               </div>
             </div>
@@ -139,36 +143,35 @@ const Tokenomics = () => {
         </div>
 
         {/* OBJECTIVES */}
-        <div className="mt-20">
-          <h3 className="text-3xl font-bold text-black dark:text-white mb-12 text-center">
+        <div className="mt-16 sm:mt-20">
+          <h3 className="text-2xl sm:text-3xl font-bold text-black dark:text-white mb-8 sm:mb-12 text-center px-4">
             Tokenomics <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#bd0404] to-red-600">Objectives</span>
           </h3>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {objectives.map((objective, index) => (
               <div
                 key={index}
-                className="group bg-white dark:bg-gray-900 rounded-2xl p-6 border border-gray-200 dark:border-gray-800 hover:border-[#bd0404]/50 transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
+                className="group bg-white dark:bg-gray-900 rounded-2xl p-5 sm:p-6 border border-gray-200 dark:border-gray-800 hover:border-[#bd0404]/50 transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
               >
                 {/* Icon */}
-                <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${objective.gradient} flex items-center justify-center text-2xl mb-4 shadow-lg group-hover:scale-110 transition-transform`}>
+                <div className={`w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-gradient-to-br ${objective.gradient} flex items-center justify-center text-xl sm:text-2xl mb-4 shadow-lg group-hover:scale-110 transition-transform`}>
                   {objective.icon}
                 </div>
 
                 {/* Title */}
-                <h4 className="text-xl font-bold text-black dark:text-white mb-3 group-hover:text-[#bd0404] transition-colors">
+                <h4 className="text-lg sm:text-xl font-bold text-black dark:text-white mb-3 group-hover:text-[#bd0404] transition-colors">
                   {objective.title}
                 </h4>
 
                 {/* Description */}
-                <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 leading-relaxed">
                   {objective.description}
                 </p>
               </div>
             ))}
           </div>
         </div>
-
 
       </div>
     </section>
